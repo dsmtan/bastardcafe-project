@@ -38,14 +38,11 @@ main {
     z-index: 100;
 }
 
-.bold {
-    font-weight: bold;
-}
 
 footer {
     height: auto;
     background-color: #464F58;
-    padding: 4.5em 0 4.5em 2.5em;
+    padding: 4.5em 0 4.5em 3.5em;
 }
 
 footer p {
@@ -69,9 +66,13 @@ footer div img {
     margin: .4em;
 }
 
+.bold {
+    font-weight: bold;
+}
 
-
-
+.hide {
+    display: none;
+}
 
 /* INDEX */
 
@@ -178,6 +179,7 @@ footer div img {
     z-index: 100;
 }
 
+
 .eventsmain h1 {
     position: relative;
     font-family: "Kanit", Arial, sans-serif;
@@ -210,11 +212,36 @@ footer div img {
     font-size: 2.5em;
 }
 
+.eventfilters {
+    height: auto;
+    margin: 1em 0 1em 1.2em;
+
+}
+
+.eventfilters h5 {
+    color: #fff;
+    font-size: 1em;
+    margin: .5em 0;
+    font-weight: normal;
+
+}
+
+.eventfilters a {
+    background-color: #2F9598;
+    padding: .3em .6em;
+    border-radius: 30px;
+    font-weight: 600;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    margin-right: .5em;
+}
 
 .singleevent {
     background-color: white;
     width: 90%;
-    margin: 2em auto;
+    margin: 2.5em auto;
     padding: 1em;
     box-shadow: 15px 15px 10px black;
 
@@ -222,16 +249,15 @@ footer div img {
 }
 
 .singleevent img {
-    width: 42%;
-    height: 270px;
-    margin-right: 1em;
+    width: 100%;
+    height: 430px;
+    margin-right: 0 auto;
     object-fit: cover;
-    object-position: 0 0;
-    float: left;
+    object-position: 0 8%;
 }
 
 #serious-sunday-terraforming-mars img {
-    object-position: 0 75%;
+    object-position: 0 90%;
 }
 
 .singleevent h3 {
@@ -241,19 +267,40 @@ footer div img {
 }
 
 .shortdescr {
-    margin: 0;
+    margin: 1.5em 0 2em 0;
     height: auto;
-    font-size: .9em;
+    font-size: .5em;
 }
 
 .shortdescr p {
-    margin: .5em 0 0 0;
+    margin: 1em 0 0 0;
 }
 
 .eventinfo {
+    display: inline-block;
+    vertical-align: middle;
     color: #2F9598;
     font-size: 1em;
     font-weight: 700;
-    line-height: 5px;
+    line-height: 8px;
     width: 50%;
+}
+
+
+.singleevent button {
+    font-size: 1em;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: bold;
+    padding: .5em .7em;
+    border-radius: 30px;
+    background-color: #FFD379;
+    color: #464F58;
+    box-shadow: 3px 3px 5px #464F58;
+
+}
+
+.singleevent button:hover {
+    cursor: pointer;
+    background-color: #E5252B;
+    color: #fff;
 }

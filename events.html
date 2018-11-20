@@ -9,10 +9,26 @@
 
 <body>
     <main class="eventsmain">
-        <a class="logolink" href="index.html"><img class="logo" src="images/logo.png" alt="Bastard Café logo"></a>
-        <h1>BASTARD CAFÉ</h1>
-        <h2>Events</h2>
+        <header>
+            <a class="logolink" href="index.html"><img class="logo" src="images/logo.png" alt="Bastard Café logo"></a>
+            <h1>BASTARD CAFÉ</h1>
+            <h2>Events</h2>
 
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a class="current" href="events.html">Events</a>
+                    <a href="library.html">Game Library</a>
+                    <a href="reviews.html">Game Reviews</a>
+                    <a href="opponent.html">Opponent Finder</a>
+                    <a href="travel.html">Geek Travel</a>
+                </div>
+            </div>
+
+            <img src="images/burger.svg" class="menuBtn">
+<!--add class current to visited page-->
+        </header>
 
         <div class="eventwrapper">
             <div class="eventfilters">
@@ -63,6 +79,7 @@
     </main>
 
     <script src="js/events.js"></script>
+    <script src="js/shared.js"></script>
 </body>
 
 </html>

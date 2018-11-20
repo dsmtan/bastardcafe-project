@@ -74,6 +74,11 @@ footer div img {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 
 
 
@@ -112,7 +117,6 @@ footer div img {
 
 .overlay a {
     padding: .5em;
-    text-decoration: none;
     font-size: 5em;
     font-weight: bold;
     color: #FFD379;
@@ -138,6 +142,40 @@ a.current {
 
 
 
+/* HEADER */
+
+.logolink {
+    position: relative;
+    z-index: 100;
+}
+
+
+.eventsmain h1, .librarymain h1 {
+    position: relative;
+    font-family: "Kanit", Arial, sans-serif;
+    font-size: 4.5em;
+    font-weight: 800;
+    color: #E5252B;
+    padding: .5em 0 0 20px;
+    margin-bottom: 0;
+    line-height: 1.4em;
+    left: 20%;
+    width: 80%;
+
+}
+
+.eventsmain h2, .librarymain h2 {
+    position: relative;
+    font-family: "Kanit", Arial, sans-serif;
+    font-size: 3.6em;
+    font-weight: 700;
+    color: #FFD379;
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1em;
+    left: 20%;
+    width: 80%;
+}
 
 
 
@@ -242,38 +280,6 @@ a.current {
 
 /* EVENTS */
 
-.logolink {
-    position: relative;
-    z-index: 100;
-}
-
-
-.eventsmain h1 {
-    position: relative;
-    font-family: "Kanit", Arial, sans-serif;
-    font-size: 4.5em;
-    font-weight: 800;
-    color: #E5252B;
-    padding: .5em 0 0 20px;
-    margin-bottom: 0;
-    line-height: 1.4em;
-    left: 20%;
-    width: 80%;
-
-}
-
-.eventsmain h2 {
-    position: relative;
-    font-family: "Kanit", Arial, sans-serif;
-    font-size: 3.8em;
-    font-weight: 700;
-    color: #FFD379;
-    margin: 0;
-    padding-left: 20px;
-    line-height: 1em;
-    left: 20%;
-    width: 80%;
-}
 
 .eventwrapper {
     width: 100%;
@@ -301,8 +307,6 @@ a.current {
     font-weight: 600;
     font-family: "Raleway", Arial, sans-serif;
     font-size: 1em;
-    text-decoration: none;
-    color: #fff;
     margin-right: .5em;
 }
 
@@ -317,7 +321,6 @@ a.current {
     margin: 2.5em auto;
     padding: 1em;
     box-shadow: 15px 15px 10px black;
-
 
 }
 
@@ -377,3 +380,26 @@ a.current {
     background-color: #E5252B;
     color: #fff;
 }
+
+
+
+/* LIBRARY */
+
+.librarywrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em;
+
+}
+
+.singlegame {
+    background-color: #fff;
+    margin: 1em;
+
+}
+
+.singlegameContent h3 {
+    font-weight: normal;
+    font-size: 1em;
+}
+

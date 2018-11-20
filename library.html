@@ -1,0 +1,79 @@
+<!DOCTYPE html5>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Board Game Library - Bastard Café</title>
+    <link rel="stylesheet" href="css/bastardcss.css">
+</head>
+
+<body>
+    <main class="librarymain">
+        <header>
+            <a class="logolink" href="index.html"><img class="logo" src="images/logo.png" alt="Bastard Café logo"></a>
+            <h1>BASTARD CAFÉ</h1>
+            <h2>Board Game Library</h2>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="events.html">Events</a>
+                    <a class="current" href="library.html">Game Library</a>
+                    <a href="reviews.html">Game Reviews</a>
+                    <a href="opponent.html">Opponent Finder</a>
+                    <a href="travel.html">Geek Travel</a>
+                </div>
+            </div>
+
+            <img src="images/burger.svg" class="menuBtn">
+            <!--add class current to visited page-->
+        </header>
+
+        <div class="libraryfilters">
+            <h5>Filters</h5>
+            <a href="library.html">All</a>
+        </div>
+
+        <div class="librarywrapper">
+
+
+            <!-- append template here -->
+
+
+
+
+        </div>
+
+        <template id="librarytemplate">
+            <article class="singlegame">
+                <div class="singlegameContent">
+                    <h3 class="gamename">GAME NAME</h3>
+                    <img src="">
+                </div>
+
+            </article>
+        </template>
+
+
+
+
+
+        <footer>
+            <div class="socialmedia">
+                <a href="https://goo.gl/maps/PVbQFt8n63G2" target="_blank"><img src="images/googlemaps.png"></a>
+                <a href="https://www.facebook.com/BastardCafe/" target="_blank"><img src="images/facebook.png"></a>
+                <a href="https://www.instagram.com/bastard_cafe/" target="_blank"><img src="images/instagram.png"></a></div>
+            <p><span class="bold">Opening Hours:</span><br>Sun-Thurs: 12.00-00.00<br>Fri-Sat: 12.00-02.00</p>
+
+
+        </footer>
+
+
+    </main>
+
+    <script src="js/library.js"></script>
+    <script src="js/shared.js"></script>
+</body>
+
+</html>

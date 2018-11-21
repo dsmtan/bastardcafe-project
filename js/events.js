@@ -6,22 +6,6 @@ const params = new URLSearchParams(window.location.search);
 const catID = params.get("catid");
 
 
-loadCategories();
-
-function loadCategories() {
-    fetch("http://mariaernst.com/kea/07cms/wordpress-huset/wp-json/wp/v2/categories?parent=14").then(e => e.json()).then(createFilter);
-}
-
-function createFilter(categories) {
-    categories.forEach(cat => {
-        const newA = document.createElement("a");
-        newA.textContent = cat.description;
-        newA.href = "?catid=" + cat.id;
-        newA.id = cat.name;
-        filters.appendChild(newA);
-    })
-}
-
 if (catID) {
     loadEventsbyCategory(catID);
 } else {
@@ -54,11 +38,6 @@ function showEvents(eventList) {
         } else {
         copy.querySelector(".eventprice span").textContent = event.acf.price;
         };
-
-
-
-        /*copy.querySelector("a").href = "details.html?petid=" + pet.id;
-        */
 
 
         parent.appendChild(copy);

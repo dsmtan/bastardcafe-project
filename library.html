@@ -31,8 +31,21 @@
         </header>
 
         <div class="libraryfilters">
-            <h5>Filters</h5>
-            <a href="library.html">All</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">Filters</button>
+                <input class="searchbar" type="text" placeholder="Search for board games..">
+
+                <div id="myDropdown" class="dropdown-content">
+                <a href="library.html">All</a>
+
+                </div>
+            </div>
+
+
+
+
+
         </div>
 
         <div class="librarywrapper">
@@ -48,8 +61,9 @@
         <template id="librarytemplate">
             <article class="singlegame">
                 <div class="singlegameContent">
-                    <h3 class="gamename">GAME NAME</h3>
                     <img src="">
+                    <h3 class="gamename">GAME NAME</h3>
+
                 </div>
 
             </article>

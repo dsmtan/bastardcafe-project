@@ -1,26 +1,52 @@
 const template = document.querySelector("#librarytemplate").content;
 const parent = document.querySelector(".librarywrapper");
-const filters = document.querySelector(".libraryfilters");
+const filters = document.querySelector(".dropdown-content");
+
 
 const params = new URLSearchParams(window.location.search);
 const catID = params.get("catid");
 
 
+loadCategories();
 
-getGames();
+function loadCategories() {
+    fetch("http://mariaernst.com/kea/07cms/wordpress-huset/wp-json/wp/v2/categories?parent=53").then(e => e.json()).then(createFilter);
+}
+
+function createFilter(categories) {
+    categories.forEach(cat => {
+        const newA = document.createElement("a");
+        newA.textContent = cat.name;
+        newA.href = "?catid=" + cat.id;
+        newA.id = cat.name;
+        filters.appendChild(newA);
+    })
+}
+
+if (catID) {
+    loadEventsbyCategory(catID);
+} else {
+    getGames();
+}
+
+function loadEventsbyCategory(catID) {
+    fetch("http://mariaernst.com/kea/07cms/wordpress-huset/wp-json/wp/v2/boardgames?categories=" + catID + "&_embed").then(e => e.json()).then(showGames);
+}
+
+
 
 function getGames() {
-    fetch("http://mariaernst.com/kea/07cms/wordpress-huset/wp-json/wp/v2/boardgames?_embed&order=asc").then(res => res.json()).then(showGames);
+    fetch("http://mariaernst.com/kea/07cms/wordpress-huset/wp-json/wp/v2/boardgames?_embed&per_page=100&order=asc").then(res => res.json()).then(showGames);
 }
 
 function showGames(gameList) {
-    gameList.forEach(event => {
+    gameList.forEach(game => {
         const copy = template.cloneNode(true);
 
-        copy.querySelector("article").id = event.slug;
-        copy.querySelector("h3").textContent = event.title.rendered;
+        copy.querySelector("article").id = game.slug;
+        copy.querySelector("h3").textContent = game.title.rendered;
 
-        /*        copy.querySelector("img").src = event._embedded["wp:featuredmedia"][0].media_details.sizes.medium_large.source_url;*/
+        copy.querySelector("img").src = game._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
 
         /*copy.querySelector("a").href = "details.html?petid=" + pet.id;
@@ -29,4 +55,18 @@ function showGames(gameList) {
 
         parent.appendChild(copy);
     })
+
+
 }
+
+
+let dropBtn = document.querySelector(".dropbtn");
+
+dropBtn.addEventListener("click", showFilters)
+
+function showFilters() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+

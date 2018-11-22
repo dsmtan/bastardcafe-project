@@ -567,6 +567,9 @@ a.current {
     top: 90px;
 }
 
+#modal-content p.rating {
+    margin: 15px;
+}
 
 .closebtn {
     cursor: pointer;
@@ -606,14 +609,15 @@ a.current {
     background-image: url(../images/1star.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 38%;
+    width: 37%;
     margin: 5px;
     margin-left: 10px;
+    margin-right: 45px;
     float: left;
 }
 
 .singlereview img {
-    max-width: 40%;
+    width: 40%;
     height: 320px;
     object-fit: contain;
     float: left;
@@ -621,7 +625,7 @@ a.current {
 }
 
 h3.reviewname {
-    text-align: center;
+    text-align: left;
     color: #E5252B;
     font-size: 2em;
     margin: 10px 0 50px 0;
@@ -635,11 +639,17 @@ h3.reviewname {
     margin-bottom: 25px;
 }
 
-p.difficulty, p.duration, p.players, p.designer {
+p.difficulty,
+p.duration,
+p.players,
+p.designer {
     margin: 15px;
 }
 
-p.difficulty span, p.duration span, p.players span, p.designer span {
+p.difficulty span,
+p.duration span,
+p.players span,
+p.designer span {
     font-weight: normal;
 }
 
@@ -669,14 +679,14 @@ p.difficulty span, p.duration span, p.players span, p.designer span {
 
 .opponentwrapper h3 {
     color: #2F9598;
-    font-size: 2.5em;
+    font-size: 35px;
     padding: 1.5em 1em 0 1em;
 
 }
 
 .introtext {
     color: #464F58;
-    font-size: 1em;
+    font-size: 17px;
     font-weight: 500;
     margin: 0.5em 80px;
 }
@@ -708,22 +718,24 @@ p.difficulty span, p.duration span, p.players span, p.designer span {
 }
 
 .meetuppost p {
-    margin-left: 1em;
+    margin: 10px 0;
     line-height: 20px;
     color: #464F58;
+    font-size: 18px;
+    line-height: 30px;
 }
 
 .meetuppost button,
 .createmeetup button {
     font-family: "Raleway", Arial, sans-serif;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 45px;
     padding: .5em .7em;
     border-radius: 30px;
     background-color: #2F9598;
     color: #fff;
     box-shadow: 3px 3px 5px #464F58;
-    margin: 1em;
+    margin: 1em 0 1em 0;
     float: right;
     border: none;
 
@@ -741,14 +753,12 @@ p.difficulty span, p.duration span, p.players span, p.designer span {
 }
 
 p#message {
-    margin-top: 50px;
+    margin: 50px 0;
     font-weight: 500;
-    font-size: 1.2em;
-    margin-bottom: 50px;
+
 }
 
 .joiners {
-    margin-left: 1em;
     margin-bottom: 2em;
 }
 
@@ -758,7 +768,7 @@ p#message {
 }
 
 .joiners h5 {
-    font-size: 2.2em;
+    font-size: 40px;
     color: #464F58;
     margin-bottom: 20px;
 }

@@ -55,13 +55,13 @@ function showSingleGame(singlegame) {
 
 
     if (singlegame.acf.rating == "2") {
-        template.querySelector(".rating-img").style.backgroundImage = "url('../images/2stars.png')";
+        template.querySelector(".rating-img").style.backgroundImage = "url('images/2stars.png')";
     } else if (singlegame.acf.rating == "3") {
-        template.querySelector(".rating-img").style.backgroundImage = "url('../images/3stars.png')";
+        template.querySelector(".rating-img").style.backgroundImage = "url('images/3stars.png')";
     } else if (singlegame.acf.rating == "4") {
-        template.querySelector(".rating-img").style.backgroundImage = "url('../images/4stars.png')";
+        template.querySelector(".rating-img").style.backgroundImage = "url('images/4stars.png')";
     } else if (singlegame.acf.rating == "5") {
-        template.querySelector(".rating-img").style.backgroundImage = "url('../images/5stars.png')";
+        template.querySelector(".rating-img").style.backgroundImage = "url('images/5stars.png')";
     }
 
     parent.appendChild(template);
@@ -92,20 +92,14 @@ function showGames(gameList) {
 
 
         if (game.acf.rating == "2") {
-            copy.querySelector(".rating-img").style.backgroundImage = "url('../images/2stars.png')";
+            copy.querySelector(".rating-img").style.backgroundImage = "url('images/2stars.png')";
         } else if (game.acf.rating == "3") {
-            copy.querySelector(".rating-img").style.backgroundImage = "url('../images/3stars.png')";
+            copy.querySelector(".rating-img").style.backgroundImage = "url('images/3stars.png')";
         } else if (game.acf.rating == "4") {
-            copy.querySelector(".rating-img").style.backgroundImage = "url('../images/4stars.png')";
+            copy.querySelector(".rating-img").style.backgroundImage = "url('images/4stars.png')";
         } else if (game.acf.rating == "5") {
-            copy.querySelector(".rating-img").style.backgroundImage = "url('../images/5stars.png')";
+            copy.querySelector(".rating-img").style.backgroundImage = "url('images/5stars.png')";
         }
-
-
-
-
-        /*copy.querySelector("a").href = "details.html?petid=" + pet.id;
-         */
 
         parent.appendChild(copy);
     })

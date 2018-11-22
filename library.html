@@ -37,16 +37,11 @@
                 <input class="searchbar" type="text" placeholder="Search for board games..">
 
                 <div class="dropdown-content">
-                <a href="library.html">All</a>
+                    <a href="library.html">All</a>
 
 
                 </div>
             </div>
-
-
-
-
-
         </div>
 
         <div class="librarywrapper">
@@ -58,6 +53,21 @@
 
 
         </div>
+
+        <div id="modal" class="modal hide">
+            <aside id="modal-content">
+                <span id="btnclose" class="closebtn">&times;</span>
+                <h3 class="modal-name" id="gametitle">Game name</h3>
+                <img src="">
+                <p class="rating">Rating: <span></span></p>
+                <p class="difficulty">Difficulty: <span></span></p>
+                <p class="duration">Duration: <span></span> minutes</p>
+                <p class="players">Max. players: <span></span></p>
+                <p class="designer">Designer: <span></span></p>
+            </aside>
+        </div>
+
+
 
         <template id="librarytemplate">
             <article class="singlegame">

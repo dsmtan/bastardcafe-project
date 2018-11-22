@@ -1,5 +1,5 @@
-const template = document.querySelector("#librarytemplate").content;
-const parent = document.querySelector(".librarywrapper");
+const template = document.querySelector("#reviewtemplate").content;
+const parent = document.querySelector(".reviewwrapper");
 const filters = document.querySelector(".dropdown-content");
 
 
@@ -42,7 +42,6 @@ function getGames() {
 function showGames(gameList) {
     gameList.forEach(game => {
         const copy = template.cloneNode(true);
-        console.log(game.id)
 
         copy.querySelector("article").id = game.slug;
         copy.querySelector("h3").textContent = game.title.rendered;
@@ -50,11 +49,8 @@ function showGames(gameList) {
         copy.querySelector("img").src = game._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
 
 
-        copy.querySelector(".singlegameContent").addEventListener("click", () => {
-            fetch("http://mariaernst.com/kea/07cms/wordpress-huset/wp-json/wp/v2/boardgames/" + game.id + "?_embed").then(promise => promise.json()).then(data => showDetails(data));
-        });
-
-
+        /*copy.querySelector("a").href = "details.html?petid=" + pet.id;
+         */
 
         parent.appendChild(copy);
     })
@@ -62,20 +58,8 @@ function showGames(gameList) {
 
 }
 
-function showDetails(gameinfo) {
 
-    modal.querySelector("h3").textContent = gameinfo.title.rendered;
-    modal.querySelector("img").src = gameinfo._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
-    modal.querySelector(".rating span").textContent = gameinfo.acf.rating;
-    modal.querySelector(".difficulty span").textContent = gameinfo.acf.difficulty;
-    modal.querySelector(".duration span").textContent = gameinfo.acf.game_duration;
-    modal.querySelector(".players span").textContent = gameinfo.acf.players;
-    modal.querySelector(".designer span").textContent = gameinfo.acf.designer;
-    modal.classList.remove("hide");
-}
 
-modal.addEventListener("click", () => modal.classList.add("hide"));
-modal.querySelector("#btnclose").addEventListener("click", () => modal.classList.add("hide"));
 
 
 
@@ -86,9 +70,6 @@ let dropdownBox = document.querySelector(".dropdown-content");
 dropBtn.addEventListener("click", showFilters);
 
 function showFilters() {
-  dropdownBox.classList.toggle("show");
+    dropdownBox.classList.toggle("show");
 }
-
-
-
 

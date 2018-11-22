@@ -36,13 +36,15 @@
                 <input class="searchbar" type="text" placeholder="Search for board games..">
 
                 <div class="dropdown-content">
-                    <a href="library.html">All</a>
+                    <a href="reviews.html">All</a>
 
                 </div>
             </div>
         </div>
 
         <div class="reviewwrapper">
+            <h5>Check out our latest board game reviews!</h5>
+
 
 
             <!-- append template here -->
@@ -51,10 +53,21 @@
         </div>
 
         <template id="reviewtemplate">
-            <article class="singlegame">
-                <div class="singlegameContent">
-                    <h3 class="gamename">REVIEW: GAME NAME</h3>
+            <article class="singlereview">
+                <div class="singlereviewContent">
+                    <div class="rating-img"></div>
+                    <h3 class="reviewname">REVIEW: GAME NAME</h3>
                     <img src="">
+
+                    <div class="reviewinfo">
+                        <p class="difficulty">Difficulty: <span></span></p>
+                        <p class="duration">Duration: <span></span> <span>minutes</span></p>
+                        <p class="players">Max. players: <span></span></p>
+                        <p class="designer">Designer: <span></span></p>
+                    </div>
+
+                    <p class="reviewtext"></p>
+
                 </div>
 
             </article>

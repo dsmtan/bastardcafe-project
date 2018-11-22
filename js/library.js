@@ -71,6 +71,9 @@ function showDetails(gameinfo) {
     modal.querySelector(".duration span").textContent = gameinfo.acf.game_duration;
     modal.querySelector(".players span").textContent = gameinfo.acf.players;
     modal.querySelector(".designer span").textContent = gameinfo.acf.designer;
+    modal.querySelector("a").href = "reviews.html?gameid=" + gameinfo.id;
+
+
     modal.classList.remove("hide");
 }
 

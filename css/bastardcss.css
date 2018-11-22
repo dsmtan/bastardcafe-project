@@ -394,7 +394,8 @@ a.current {
 
 /* LIBRARY */
 
-.libraryfilters, .reviewfilters {
+.libraryfilters,
+.reviewfilters {
     margin-top: 2em;
 }
 
@@ -519,9 +520,9 @@ a.current {
 .modal {
     position: fixed;
     width: 100vw;
-    top: 23%;
+    top: 24%;
     left: 0%;
-    min-height: 50%;
+    min-height: 60%;
     padding: 1em;
     color: #464F58;
     font-size: 2.5em;
@@ -546,7 +547,24 @@ a.current {
     font-size: 2em;
     font-weight: 700;
     padding: 0;
+    margin-top: .7em;
     text-align: center;
+}
+
+#modal-content a {
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding: .5em .7em;
+    border-radius: 30px;
+    background-color: #FFD379;
+    color: #464F58;
+    box-shadow: 3px 3px 5px #464F58;
+    margin: 0 auto;
+    border: none;
+    position: relative;
+    left: 34%;
+    top: 90px;
 }
 
 
@@ -559,6 +577,78 @@ a.current {
     overflow: auto;
     font-size: 2em;
 }
+
+
+
+
+
+
+/* REVIEWS PAGE */
+
+.reviewwrapper h5 {
+    text-align: center;
+    color: #ACEBF7;
+    font-style: italic;
+}
+
+
+.singlereview {
+    background-color: white;
+    width: 90%;
+    margin: 2.5em auto;
+    padding: 30px;
+    box-shadow: 15px 15px 10px black;
+
+}
+
+.rating-img {
+    height: 70px;
+    background-image: url(../images/1star.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 38%;
+    margin: 5px;
+    margin-left: 10px;
+    float: left;
+}
+
+.singlereview img {
+    max-width: 40%;
+    height: 320px;
+    object-fit: contain;
+    float: left;
+    margin-right: 30px;
+}
+
+h3.reviewname {
+    text-align: center;
+    color: #E5252B;
+    font-size: 2em;
+    margin: 10px 0 50px 0;
+}
+
+.reviewinfo {
+    padding: 1em;
+    font-size: .9em;
+    font-weight: bold;
+    color: #464F58;
+    margin-bottom: 25px;
+}
+
+p.difficulty, p.duration, p.players, p.designer {
+    margin: 15px;
+}
+
+p.difficulty span, p.duration span, p.players span, p.designer span {
+    font-weight: normal;
+}
+
+
+.reviewtext {
+    font-size: .9em;
+    padding-bottom: 3em;
+}
+
 
 
 
@@ -623,7 +713,8 @@ a.current {
     color: #464F58;
 }
 
-.meetuppost button, .createmeetup button {
+.meetuppost button,
+.createmeetup button {
     font-family: "Raleway", Arial, sans-serif;
     font-weight: bold;
     font-size: 2.5em;
@@ -638,7 +729,8 @@ a.current {
 
 }
 
-.meetuppost button:hover, .createmeetup button:hover {
+.meetuppost button:hover,
+.createmeetup button:hover {
     background-color: #E5252B
 }
 
@@ -712,16 +804,11 @@ p#message {
 }
 
 #createbtn {
-    float:none;
+    float: none;
     display: block;
     margin: 1em auto;
 
 }
-
-
-/* REVIEWS PAGE */
-
-
 
 
 

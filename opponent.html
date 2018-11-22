@@ -32,25 +32,44 @@
 
         <div class="opponentwrapper">
 
-            <h3>Looking for new buddies to play awesome board games with??!</h3>
-            <p>You're not the only one! Join your new opponents in one of the meet-ups below or create a new one yourself. See you soon at Bastard Café!</p>
+            <h3>Looking for challenging buddies to play board games with??!</h3>
+            <p class="introtext">You're not the only one! Join your new opponents in one of the meet-ups below or create a new one yourself. See you soon at Bastard Café!</p>
 
             <div class="fight">
 
             </div>
 
             <article class="meetuppost">
-                <img src="images/rose.png">
-                <p class="meetdate">When? <span>Friday 23-11-2018</span></p>
-                <p class="meettime">Time? <span>20:00</span></p>
-                <p class="organizer">Organized by: <span>Rose</span></p>
-                <p class="message">Hi guys! I'm hoping to meet fellow passionate board game players this Friday to play Carcassonne or try out a new board game. If you're free and have cool suggestions, let me know!</p>
+                <img id="rose" src="images/rose.png">
+                <p class="meetdate"><span class="bold">When? Friday 23-11-2018</span> </p>
+                <p class="meettime"><span class="bold">Time? 20:00</span></p>
+                <p class="organizer"><span class="bold">Organized by: Rose</span></p>
 
+                <p id="message">Hi guys! This Friday I'm hoping to meet up with passionate board game players, who like challenging games like Advanced Squad Leader or trying out new board games. If you're free and have cool suggestions, let me know and join!</p>
+
+
+                <div class="joiners">
                 <button>Join this meet-up!</button>
-
-
+                <h5>Joined already:</h5><img src="images/alexander.png"><img src="images/pete.png"></div>
 
             </article>
+
+            <div class="createmeetup">
+
+              <h4>Organize your own meet-up!</h4>
+
+
+                <p>Name:</p> <input class="meetupform" type="text" placeholder="Name">
+                <p>Date:</p>
+                <input class="meetupform" type="date" placeholder="Date">
+                <p>Time:</p>
+                <input class="meetupform" type="time" placeholder="Time">
+                <p id="details">Details:</p>
+                <textarea class="meetupform" id="meetdetails" type="text" placeholder="Describe your plans.."></textarea>
+
+                <button id="createbtn">CREATE MEET-UP</button>
+
+            </div>
 
 
 

@@ -155,7 +155,8 @@ a.current {
 
 .eventsmain h1,
 .librarymain h1,
-.reviewmain h1, .opponentmain h1 {
+.reviewmain h1,
+.opponentmain h1 {
     position: relative;
     font-family: "Kanit", Arial, sans-serif;
     font-size: 4.5em;
@@ -171,7 +172,8 @@ a.current {
 
 .eventsmain h2,
 .librarymain h2,
-.reviewmain h2, .opponentmain h2 {
+.reviewmain h2,
+.opponentmain h2 {
     position: relative;
     font-family: "Kanit", Arial, sans-serif;
     font-size: 3.6em;
@@ -515,6 +517,8 @@ a.current {
 }
 
 
+
+
 /* OPPONENT PAGE */
 
 .opponentwrapper {
@@ -522,7 +526,7 @@ a.current {
     background-color: #FFD379;
     text-align: center;
     padding-bottom: 5em;
-    margin: 6em 0;
+    margin: 6em 0 0 0;
 }
 
 .opponentwrapper h3 {
@@ -532,10 +536,10 @@ a.current {
 
 }
 
-.opponentwrapper p {
+.introtext {
     color: #464F58;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 500;
     margin: 0.5em 80px;
 }
 
@@ -555,21 +559,23 @@ a.current {
 
 
 .meetuppost {
+    display: block;
     background-color: white;
     width: 90%;
-    margin: 1em auto;
-    box-shadow: 15px 15px 10px black;
+    margin: 2em auto;
+    box-shadow: 10px 10px 10px black;
     text-align: left;
-    padding-top: 40px;
+    padding: 40px;
+    height: auto;
 }
 
 .meetuppost p {
     margin-left: 1em;
     line-height: 20px;
+    color: #464F58;
 }
 
-
-.meetuppost button {
+.meetuppost button, .createmeetup button {
     font-family: "Raleway", Arial, sans-serif;
     font-weight: bold;
     font-size: 2.5em;
@@ -578,20 +584,92 @@ a.current {
     background-color: #2F9598;
     color: #fff;
     box-shadow: 3px 3px 5px #464F58;
-    margin: 1em
-
-}
-
-.meetuppost img {
-    height: 150px;
+    margin: 1em;
     float: right;
-    margin-right: 30px;
+    border: none;
+
 }
 
-p.message {
-    font-weight: 500;
-    font-size: 1em;
+.meetuppost button:hover, .createmeetup button:hover {
+    background-color: #E5252B
 }
+
+.meetuppost #rose {
+    height: 150px;
+    position: absolute;
+    right: 10%;
+}
+
+p#message {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+.joiners {
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.joiners img {
+    height: 100px;
+    display: inline-block;
+}
+
+.joiners h5 {
+    font-size: 2.2em;
+    color: #464F58;
+    margin-bottom: 20px;
+}
+
+.createmeetup {
+    color: #464F58;
+}
+
+.createmeetup h4 {
+    font-size: 55px;
+    margin-top: 150px;
+}
+
+.createmeetup p {
+    display: inline-block;
+    font-size: 3em;
+    text-align: left;
+    margin: 1em 30px 0 0;
+    width: 160px;
+}
+
+
+.meetupform {
+    padding: .5em 1em;
+    border-radius: 30px;
+    font-family: "Raleway", Arial, sans-serif;
+    font-size: 2.5em;
+    margin: 15px 0;
+    border: none;
+    width: 15em;
+    color: gray;
+}
+
+#details {
+    vertical-align: top;
+    margin-top: .5em;
+}
+
+
+#meetdetails {
+    height: 250px;
+
+}
+
+#createbtn {
+    float:none;
+    display: block;
+    margin: 1em auto;
+
+}
+
 
 
 /*

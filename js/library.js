@@ -61,12 +61,20 @@ function showGames(gameList) {
 
 
 let dropBtn = document.querySelector(".dropbtn");
+let closeFilter = document.querySelector(".closeFilter");
+let dropdownBox = document.querySelector(".dropdown-content");
 
-dropBtn.addEventListener("click", showFilters)
+dropBtn.addEventListener("click", showFilters);
 
 function showFilters() {
-  document.getElementById("myDropdown").classList.toggle("show");
+  dropdownBox.classList.toggle("show");
 }
 
+document.addEventListener("click", function(clicking){
+    if (clicking.target.closest(".dropdown-content")) return;
+
+    dropdownBox.classList.add("hide");
+
+});
 
 

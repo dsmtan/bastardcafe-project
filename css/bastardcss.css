@@ -649,7 +649,8 @@ p.designer {
 p.difficulty span,
 p.duration span,
 p.players span,
-p.designer span, p.rating span {
+p.designer span,
+p.rating span {
     font-weight: normal;
 }
 
@@ -719,7 +720,6 @@ p.designer span, p.rating span {
 
 .meetuppost p {
     margin: 10px 0;
-    line-height: 20px;
     color: #464F58;
     font-size: 20px;
     line-height: 30px;
@@ -816,10 +816,87 @@ p#message {
 #createbtn {
     float: none;
     display: block;
-    margin: 1em auto;
+    margin: 1em;
+    margin-left: 288px;
 
 }
 
+/* GEEK TRAVEL PAGE */
+
+.travelwrapper {
+    background-color: #FFD379;
+    margin-top: 70px;
+    padding: 30px;
+
+}
+
+#trolley {
+    height: 400px;
+    float: left;
+    margin: 1em 40px 3em;
+}
+
+.travelwrapper h3 {
+    text-align: center;
+    color: #2F9598;
+    font-size: 39px;
+}
+
+.travelwrapper .introtext {
+    text-align: center;
+    margin-bottom: 150px;
+    font-size: 19px;
+}
+
+.spiel-trip {
+    display: block;
+    background-color: white;
+    width: 90%;
+    margin: 2em auto 180px;
+    box-shadow: 10px 10px 10px black;
+    text-align: left;
+    padding: 40px;
+    height: auto;
+}
+
+.spiel-trip h5 {
+    font-size: 40px;
+    margin: .5em 0 10px 0;
+    color: #E5252B;
+}
+
+.spiel-trip img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.spiel-trip p,
+.spiel-trip ul {
+    margin: 30px 0;
+    color: #464F58;
+    font-size: 25px;
+    line-height: 40px;
+
+}
+
+#signupbtn {
+    position: relative;
+    font-family: "Raleway", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    padding: .5em .7em;
+    border-radius: 30px;
+    background-color: #2F9598;
+    border: none;
+    color: #fff;
+    box-shadow: 3px 3px 5px #464F58;
+    left: 16%;
+    margin: 30px 0 60px;
+}
+
+#signupbtn:hover {
+    background-color: #E5252B
+}
 
 
 
